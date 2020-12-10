@@ -12,14 +12,286 @@
 
 <body>
   <header class="header">
+    <img class="header__logo logo" src="#" alt="Логотип в виде короны">
 
+    <h1 class="header__title">
+      Питомник <br>
+      Мейн-Кунов
+    </h1>
+    <p class="header__description">
+      Первый питомник с расширенным спектром услуг
+    </p>
+    <address class="header__address">Новосибирск</address>
+    <a class="header__button" href="#">Смотреть котиков</a>
   </header>
-  <main>
+  <main class="main-page">
+    <h1 class="visually-hidden">Питомник Мейн Кунов</h1>
 
+    <section class="main-page__pets pets">
+      <h2 class="pets__title">
+        Питомцы
+      </h2>
+      <p class="pets__description">
+        Все представители нашего питомника имеют ветеринарный паспорт
+        с отметками о прививках и документ с родословной
+      </p>
+
+      <ul class="pets__groups">
+        <li class="pets__group-item pets__group-item--active">
+          <a class="pets__group-tab" href="#">Коты</a>
+        </li>
+        <li class="pets__group-item">
+          <a class="pets__group-tab" href="#">Кошки</a>
+        </li>
+        <li class="pets__group-item">
+          <a class="pets__group-tab" href="#">Котята</a>
+        </li>
+      </ul>
+
+      <ul class="pets__cards">
+        <li class="pets__card-item">
+          <img class="pets__card-picture" src="" alt="Черный мейн кун">
+        </li>
+        <li class="pets__card-item">
+          <img class="pets__card-picture" src="" alt="Белый мейн кун">
+        </li>
+        <li class="pets__card-item">
+          <img class="pets__card-picture" src="" alt="Коричневый грациозный мейн кун">
+        </li>
+      </ul>
+
+      <button class="pets__show-more" type="button">Смотреть больше</button>
+    </section>
+
+    <section class="main-page__breed-features breed-features">
+      <h2 class="breed-features__title">
+        Особенности породы
+      </h2>
+      <p class="breed-features__description">
+        Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца,
+        вы получите умное животное, которому нет равных
+      </p>
+
+      <ul class="breed-features__features-list">
+        <li class="breed-features__features-item">Легко уживается в семьях с детьми или другими животными</li>
+        <li class="breed-features__features-item">Выполняет команды как дрессированная собака</li>
+        <li class="breed-features__features-item">Вес может достигать 12 кг, а длина 1 м</li>
+        <li class="breed-features__features-item">Внешний вид этой кошки похож на дикую рысь</li>
+      </ul>
+    </section>
+
+    <section class="main-page__advantages advantages">
+      <h2 class="advantages__title">
+        Почему именно мы?
+      </h2>
+      <p class="advantages__description">
+        Приобретая  животное в нашем питомнике, вы получите
+      </p>
+
+      <ul class="advantages__list">
+        <li class="advantages__item">Бесплатное ветеринарное обслуживание 5 лет</li>
+        <li class="advantages__item">Консультирование по любому вопросу 24 часа в сутки</li>
+        <li class="advantages__item">Индивидуальный подбор питания для вашего кота</li>
+      </ul>
+    </section>
+
+    <section class="main-page__care care">
+      <h2 class="care__title">
+        Об уходе за Мейн-Куном
+      </h2>
+
+      <ul class="care__list">
+        <li class="care__item">
+          <div class="care__card care-card">
+            <h3 class="care-card__title">Шерсть</h3>
+            <p class="care-card__description">
+              Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной
+            </p>
+            <a class="care-card__link" href="#">
+              <span class="visually-hidden">Смотреть больше</span>
+            </a>
+          </div>
+        </li>
+        <li class="care__item">
+          <div class="care__card care-card">
+            <h3 class="care-card__title">Уши и глаза</h3>
+            <p class="care-card__description">
+              Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть признаками заболевания
+            </p>
+            <a class="care-card__link" href="#">
+              <span class="visually-hidden">Смотреть больше</span>
+            </a>
+          </div>
+        </li>
+        <li class="care__item">
+          <div class="care__card care-card">
+            <h3 class="care-card__title">Когти</h3>
+            <p class="care-card__description">
+              Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку
+            </p>
+            <a class="care-card__link" href="#">
+              <span class="visually-hidden">Смотреть больше</span>
+            </a>
+          </div>
+        </li>
+        <li class="care__item">
+          <div class="care__card care-card">
+            <h3 class="care-card__title">Питание</h3>
+            <p class="care-card__description">
+              В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам
+            </p>
+            <a class="care-card__link" href="#">
+              <span class="visually-hidden">Смотреть больше</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-page__team team">
+      <h2 class="team__title">
+        Наша команда
+      </h2>
+      <p class="team__description">
+        Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии
+      </p>
+
+      <button class="team__member__prev-member" type="button">
+        <span class="visually-hidden">Предыдущий член команды</span>
+      </button>
+
+      <ul class="team__members">
+        <li class="team__member">
+          <div class="team__member-card team-member">
+            <h3 class="team-member__name">Серёжа Попов</h3>
+            <p class="team-member__profession">Основатель питомника</p>
+            <p class="team-member__description">
+              Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца
+            </p>
+
+            <ul class="team-member__socials socials">
+              <li class="socials__item">
+                <a class="socials__link" href="https://facebook.com">Facebook</a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://twitter.com">Twitter</a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://vk.com">VK</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <button class="team__member__next-member" type="button">
+        <span class="visually-hidden">Следующий член команды</span>
+      </button>
+    </section>
+
+    <section class="main-page__faq faq">
+      <h2 class="faq__title">
+        Вопрос-Ответ
+      </h2>
+      <p class="faq__description">
+        Мы ответим на самые популярные ваши вопросы
+      </p>
+
+      <ol class="faq__list">
+        <li class="faq__item">
+          <article class="faq__card faq-card">
+            <h3 class="faq-card__title">С какого возраста можно забирать котенка из питомника?</h3>
+            <button class="faq-card__toggle-answer" type="button">
+              <span class="visually-hidden">Показать/скрыть</span>
+            </button>
+            <p class="faq-card__answer">
+              Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.<br>
+              Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.
+            </p>
+          </article>
+        </li>
+        <li class="faq__item">
+          <article class="faq__card faq-card">
+            <h3 class="faq-card__title">Как зарезервировать котенка?</h3>
+            <button class="faq-card__toggle-answer" type="button">
+              <span class="visually-hidden">Показать/скрыть</span>
+            </button>
+          </article>
+        </li>
+        <li class="faq__item">
+          <article class="faq__card faq-card">
+            <h3 class="faq-card__title">Можно ли купить кота, если я живу в другом городе?</h3>
+            <button class="faq-card__toggle-answer" type="button">
+              <span class="visually-hidden">Показать/скрыть</span>
+            </button>
+          </article>
+
+        </li>
+        <li class="faq__item">
+          <article class="faq__card faq-card">
+            <h3 class="faq-card__title">Как подготовить дом к приему нового питомца?</h3>
+            <button class="faq-card__toggle-answer" type="button">
+              <span class="visually-hidden">Показать/скрыть</span>
+            </button>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section class="main-page__reviews reviews">
+      <h2 class="reviews__title">
+        Отзывы
+      </h2>
+
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <article class="reviews__card review">
+            <h3 class="review__title">Серёжа Попов</h3>
+
+            <p class="review__text">
+              Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться
+              в любое время
+            </p>
+
+            <div class="review__footer">
+              <time class="review__time" datetime="2018-05-24">24 мая 2018</time>
+              <ul class="review__socials">
+                <li class="review__socials-item">
+                  <a class="socials-link" href="https://twitter.com">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+                <li class="review__socials-item">
+                  <a class="socials-link" href="https://vk.com">
+                    <span class="visually-hidden">VK</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer class="footer">
+    <img class="footer__logo logo" src="#" alt="Логотип в виде короны">
 
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link" href="https://facebook.com">Facebook</a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://twitter.com">Twitter</a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://vk.com">VK</a>
+      </li>
+    </ul>
+
+    <address class="footer__address">Новосибирск, Пушкинский проспект, 19</address>
+
+    <a class="footer__phone" href="tel:+73839006465">+7 (383) 900-64-65</a>
   </footer>
 </body>
 </html>
