@@ -12,8 +12,30 @@
 
 <body>
   <header class="header">
-    <img class="header__logo logo" src="#" alt="Логотип в виде короны">
+    <a class="header__logo logo"aria-label="Логотип питомника Мейн Кунов">
+      <img class="header__logo logo" src="#" alt="Логотип питомника Мейн Кунов">
+      Логотип питомника Мейн Кунов
+    </a>
 
+    <ul class="header__socials socials">
+      <li class="socials__item">
+        <a class="socials__link" href="https://vk.com">
+          <span class="visually-hidden">VK</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://twitter.com">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://facebook.com">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+    </ul>
+
+    <address class="header__address">Новосибирск</address>
     <h1 class="header__title">
       Питомник <br>
       Мейн-Кунов
@@ -21,7 +43,6 @@
     <p class="header__description">
       Первый питомник с расширенным спектром услуг
     </p>
-    <address class="header__address">Новосибирск</address>
     <a class="header__button" href="#">Смотреть котиков</a>
   </header>
   <main class="main-page">
@@ -59,8 +80,14 @@
           <img class="pets__card-picture" src="" alt="Коричневый грациозный мейн кун">
         </li>
       </ul>
+      <button class="pets__pet-button--prev" type="button">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="pets__pet-button--next" type="button">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
 
-      <button class="pets__show-more" type="button">Смотреть больше</button>
+      <a class="pets__show-more" href="#">Смотреть больше</a>
     </section>
 
     <section class="main-page__breed-features breed-features">
@@ -71,6 +98,7 @@
         Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца,
         вы получите умное животное, которому нет равных
       </p>
+      <!-- An image will be here -->
 
       <ul class="breed-features__features-list">
         <li class="breed-features__features-item">Легко уживается в семьях с детьми или другими животными</li>
@@ -89,9 +117,15 @@
       </p>
 
       <ul class="advantages__list">
-        <li class="advantages__item">Бесплатное ветеринарное обслуживание 5 лет</li>
-        <li class="advantages__item">Консультирование по любому вопросу 24 часа в сутки</li>
-        <li class="advantages__item">Индивидуальный подбор питания для вашего кота</li>
+        <li class="advantages__item">
+          <a class="advantages__link" href="#">Бесплатное ветеринарное обслуживание 5 лет</a>
+        </li>
+        <li class="advantages__item">
+          <a class="advantages__link" href="#">Консультирование по любому вопросу 24 часа в сутки</a>
+        </li>
+        <li class="advantages__item">
+          <a class="advantages__link" href="#">Индивидуальный подбор питания для вашего кота</a>
+        </li>
       </ul>
     </section>
 
@@ -102,48 +136,36 @@
 
       <ul class="care__list">
         <li class="care__item">
-          <div class="care__card care-card">
-            <h3 class="care-card__title">Шерсть</h3>
-            <p class="care-card__description">
+          <a class="care__link" href="#">
+            <h3 class="care__link-title">Шерсть</h3>
+            <p class="care__link-content">
               Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной
             </p>
-            <a class="care-card__link" href="#">
-              <span class="visually-hidden">Смотреть больше</span>
-            </a>
-          </div>
+          </a>
         </li>
         <li class="care__item">
-          <div class="care__card care-card">
-            <h3 class="care-card__title">Уши и глаза</h3>
-            <p class="care-card__description">
+          <a class="care__link" href="#">
+            <h3 class="care__link-title">Уши и глаза</h3>
+            <p class="care__link-content">
               Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть признаками заболевания
             </p>
-            <a class="care-card__link" href="#">
-              <span class="visually-hidden">Смотреть больше</span>
-            </a>
-          </div>
+          </a>
         </li>
         <li class="care__item">
-          <div class="care__card care-card">
-            <h3 class="care-card__title">Когти</h3>
-            <p class="care-card__description">
+          <a class="care__link" href="#">
+            <h3 class="care__link-title">Когти</h3>
+            <p class="care__link-content">
               Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку
             </p>
-            <a class="care-card__link" href="#">
-              <span class="visually-hidden">Смотреть больше</span>
-            </a>
-          </div>
+          </a>
         </li>
         <li class="care__item">
-          <div class="care__card care-card">
-            <h3 class="care-card__title">Питание</h3>
-            <p class="care-card__description">
+          <a class="care__link" href="#">
+            <h3 class="care__link-title">Питание</h3>
+            <p class="care__link-content">
               В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам
             </p>
-            <a class="care-card__link" href="#">
-              <span class="visually-hidden">Смотреть больше</span>
-            </a>
-          </div>
+          </a>
         </li>
       </ul>
     </section>
@@ -156,35 +178,45 @@
         Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии
       </p>
 
-      <button class="team__member__prev-member" type="button">
-        <span class="visually-hidden">Предыдущий член команды</span>
-      </button>
-
       <ul class="team__members">
         <li class="team__member">
           <div class="team__member-card team-member">
-            <h3 class="team-member__name">Серёжа Попов</h3>
-            <p class="team-member__profession">Основатель питомника</p>
-            <p class="team-member__description">
-              Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца
-            </p>
+            <blockquote class="team-member__block">
+              <cite class="team-member__cite">
+                <span class="team-member__name">Серёжа Попов</span>
+                <p class="team-member__profession">Основатель питомника</p>
+              </cite>
+
+              <p class="team-member__description">
+                Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца
+              </p>
+            </blockquote>
 
             <ul class="team-member__socials socials">
               <li class="socials__item">
-                <a class="socials__link" href="https://facebook.com">Facebook</a>
+                <a class="socials__link" href="https://facebook.com">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link" href="https://twitter.com">Twitter</a>
+                <a class="socials__link" href="https://twitter.com">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link" href="https://vk.com">VK</a>
+                <a class="socials__link" href="https://vk.com">
+                  <span class="visually-hidden">VK</span>
+                </a>
               </li>
             </ul>
           </div>
         </li>
       </ul>
 
-      <button class="team__member__next-member" type="button">
+      <button class="team__button team__button--prev" type="button">
+        <span class="visually-hidden">Предыдущий член команды</span>
+      </button>
+      <button class="team__button team__button--next" type="button">
         <span class="visually-hidden">Следующий член команды</span>
       </button>
     </section>
@@ -216,6 +248,9 @@
             <button class="faq-card__toggle-answer" type="button">
               <span class="visually-hidden">Показать/скрыть</span>
             </button>
+            <p class="faq-card__answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+            </p>
           </article>
         </li>
         <li class="faq__item">
@@ -224,6 +259,9 @@
             <button class="faq-card__toggle-answer" type="button">
               <span class="visually-hidden">Показать/скрыть</span>
             </button>
+            <p class="faq-card__answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+            </p>
           </article>
 
         </li>
@@ -233,6 +271,9 @@
             <button class="faq-card__toggle-answer" type="button">
               <span class="visually-hidden">Показать/скрыть</span>
             </button>
+            <p class="faq-card__answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+            </p>
           </article>
         </li>
       </ol>
@@ -246,12 +287,14 @@
       <ul class="reviews__list">
         <li class="reviews__item">
           <article class="reviews__card review">
-            <h3 class="review__title">Серёжа Попов</h3>
+            <blockquote class="review__block">
+              <cite class="review__author">Серёжа Попов</cite>
 
-            <p class="review__text">
-              Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться
-              в любое время
-            </p>
+              <p class="review__text">
+                Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться
+                в любое время
+              </p>
+            </blockquote>
 
             <div class="review__footer">
               <time class="review__time" datetime="2018-05-24">24 мая 2018</time>
@@ -271,26 +314,40 @@
           </article>
         </li>
       </ul>
+      <button class="reviews__button reviews__button--prev" type="button">
+        <span class="visually-hidden">Предыдущий отзыв</span>
+      </button>
+      <button class="reviews__button reviews__button--next" type="button">
+        <span class="visually-hidden">Следующий отзыв</span>
+      </button>
     </section>
   </main>
 
   <footer class="footer">
-    <img class="footer__logo logo" src="#" alt="Логотип в виде короны">
+    <a class="footer__logo logo"aria-label="Логотип питомника Мейн Кунов">
+      <img class="footer__logo logo" src="#" alt="Логотип питомника Мейн Кунов">
+      Логотип питомника Мейн Кунов
+    </a>
 
     <ul class="footer__socials socials">
       <li class="socials__item">
-        <a class="socials__link" href="https://facebook.com">Facebook</a>
+        <a class="socials__link" href="https://facebook.com">
+          <span class="visually-hidden">Facebook</span>
+        </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link" href="https://twitter.com">Twitter</a>
+        <a class="socials__link" href="https://twitter.com">
+          <span class="visually-hidden">Twitter</span>
+        </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link" href="https://vk.com">VK</a>
+        <a class="socials__link" href="https://vk.com">
+          <span class="visually-hidden">VK</span>
+        </a>
       </li>
     </ul>
 
-    <address class="footer__address">Новосибирск, Пушкинский проспект, 19</address>
-
+    <a class="footer__address" href="https://www.google.com/maps/search/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA,+%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+19/@54.9922303,82.8585672,12.23z?hl=ru-RU">Новосибирск, Пушкинский проспект, 19</a>
     <a class="footer__phone" href="tel:+73839006465">+7 (383) 900-64-65</a>
   </footer>
 </body>
