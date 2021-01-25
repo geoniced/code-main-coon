@@ -42,6 +42,26 @@ img {
   clip-path: inset(100%);
 }
 
+.logo__icon {
+  width: 59px;
+  height: 59px;
+}
+
+.socials__icon--vk {
+  width: 13px;
+  height: 8px;
+}
+
+.socials__icon--twitter {
+  width: 15px;
+  height: 10px;
+}
+
+.socials__icon--fb {
+  width: 5px;
+  height: 10px;
+}
+
 .section__title {
   margin: 0;
 
@@ -70,6 +90,20 @@ img {
 
 .breed-features {
   background-color: #1f1c1d;
+}
+
+.advantages__icon--free-care {
+  width: 98px;
+  height: 107px;
+}
+
+.advantages__icon--daily-consult {
+  width: 107px;
+  height: 95px;
+}
+.advantages__icon--personal-food {
+  width: 70px;
+  height: 108px;
 }
 
 .faq {
